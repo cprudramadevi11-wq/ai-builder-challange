@@ -10,7 +10,9 @@
   },
   "scripts": {
     "dev": "pnpm -r --parallel dev",
-    "build": "pnpm -r build",
+    "build": "pnpm --filter @asset-tracking/starter build",
+    "build:all": "pnpm -r build",
+    "start": "pnpm --filter @asset-tracking/starter start",
     "test": "pnpm -r test",
     "lint": "pnpm -r lint"
   },
